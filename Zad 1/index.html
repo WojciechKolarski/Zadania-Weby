@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Operacje arytmetyczne</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+  <div class="general">
+      <div class="inputField">
+        <p>Podaj ilość</p>
+        <input type="text" id="member">
+      </div>
+
+      <div id="container">
+      </div>
+      
+      <div id="loaderContainer">
+        <div class="lds-roller" id="loader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+      </div>
+      
+      <div class="statsData">
+          <p>Suma</p>
+          <input type="text" id="sum" disabled="disabled">
+          <p>Średnia</p>
+          <input type="text" id="avg" disabled="disabled">
+          <p>Min</p>
+          <input type="text" id="min" disabled="disabled">
+          <p>Max</p>
+          <input type="text" id="max" disabled="disabled">
+       </div>
+
+    <div class="buttons">
+      <button type="button" onclick="calculateApp1.addClickButton();" id="add">Dodaj</button>
+      <button type="button" onclick="calculateApp1.deleteClickButton();" id="delete">Usuń</button>
+    </div>
+  </div>
+    <script src="index.js"></script>
+  
+</body>
+</html>
